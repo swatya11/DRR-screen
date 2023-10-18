@@ -1,0 +1,63 @@
+.drr-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .date-picker {
+    margin-bottom: 20px;
+  }
+  
+  .exclude-dates {
+    margin-bottom: 20px;
+  }
+  
+  #calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  #calendar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .lead-count {
+    margin-bottom: 20px;
+  }
+  
+  #submit-button {
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #submit-button:hover {
+    background-color: #0056a4;
+  }
+  /* Add a class to style excluded dates */
+.excluded {
+  background-color: #f2f2f2; /* Use a different background color to distinguish excluded dates */
+  color: #999; /* Optionally, change the text color to be less prominent */
+  text-decoration: line-through; /* Add a strike-through to excluded dates */
+  cursor: not-allowed; /* Change cursor to not-allowed for excluded dates */
+}
+
+/* Style the legend for excluded dates */
+.exclude-legend {
+  margin-top: 10px;
+  font-style: italic;
+  color: #999;
+}
+
+/* Add a class to highlight the selected date */
+.selected {
+  background-color: #0074D9;
+  color: white;
+}
